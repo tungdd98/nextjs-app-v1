@@ -18,10 +18,9 @@ Combine TRPC for your backend, PostgreSQL and Prisma as the ORM with the newest 
 - ⚡ Database with [Prisma](https://www.prisma.io/)
 - ⚙️ VSCode extensions
 - 🎨 ESLint + Prettier
-- 💚 CI setup using GitHub Actions:
-  - ✅ E2E testing with [Playwright](https://playwright.dev/)
-  - ✅ Linting
+- 💚 E2E testing with [Playwright](https://playwright.dev/)
 - 🎨 Customizing [Material UI](https://mui.com/) and [Tailwind CSS](https://tailwindcss.com/)
+- 🎨 Easy to develop and test UI components with [Storybook](https://storybook.js.org/)
 
 # Quick Start
 
@@ -47,14 +46,12 @@ npm dx
 ## Commands
 
 ```bash
-npm build      # runs `prisma generate` + `prisma migrate` + `next build`
-npm db-reset   # resets local db
-npm dev        # starts next.js
-npm dx         # starts postgres db + runs migrations + seeds + starts next.js
-npm test-dev   # runs e2e tests on dev
-npm test-start # runs e2e + unit tests
-npm test-unit  # runs normal Vitest unit tests
-npm test-e2e   # runs e2e tests
+npm build             # runs `prisma generate` + `prisma migrate` + `next build`
+npm db-reset          # resets local db
+npm dev               # starts next.js
+npm dx                # starts postgres db + runs migrations + seeds + starts next.js
+npm test-e2e          # runs e2e tests
+npm run storybook     # run Storybook
 ```
 
 # Resources
